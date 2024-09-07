@@ -1,0 +1,93 @@
+body{
+    background: black;
+}
+
+.container{
+    background: rgba(243, 3, 3, 0.26);
+    width: 80vw;
+    border-radius: 20px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    
+}
+
+.img{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    text-align:center ;
+    margin-top: 10%;
+
+
+}
+.img img ,canvas{
+    max-width: 60vw;
+    max-height: 60vh;
+    border-radius: 10px;
+   
+}
+.upload input{
+    display: none;
+
+}
+.upload label{
+    color: aliceblue;
+    border: wheat dashed;
+    padding: 5px;
+    cursor: pointer;
+
+}
+
+
+
+
+.filters ul  {
+    padding-top:20px ;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    direction: rtl;
+}
+
+
+.filters ul li{
+
+ display: flex;
+    flex-direction: column;
+    direction: rtl;
+}
+.filters ul li label{
+    color: aliceblue;
+   
+}
+
+.filters ul li:last-child{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   
+   
+}
+
+.filters ul li a , span{
+    color: aliceblue;
+    padding: 8px;
+    margin-top: 5px;
+    background: green;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:650px){
+    .container{
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    .img img ,canvas{
+        max-width: 80vw;
+    }
+}
+

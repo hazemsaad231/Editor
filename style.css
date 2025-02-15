@@ -9,6 +9,9 @@ body{
     margin: auto;
     display: grid;
     grid-template-columns: 5fr 3fr;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    padding: 20px;
     
 }
 
@@ -18,12 +21,11 @@ body{
     gap: 50px;
     justify-content: center;
     text-align:center ;
-    margin-top: 10%;
 
 
 }
 .img img ,canvas{
-    max-width: 60vw;
+    max-width: 100%;
     max-height: 60vh;
     border-radius: 10px;
    
@@ -41,7 +43,12 @@ body{
 }
 
 
-
+.upload{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
 
 .filters ul  {
     padding-top:20px ;
@@ -80,6 +87,15 @@ body{
     border-radius: 5px;
     cursor: pointer;
 }
+@media screen and (max-width:1024px){
+    .container{
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    .img img ,canvas{
+        max-width: 100%;
+    }
+}
 
 @media screen and (max-width:650px){
     .container{
@@ -87,7 +103,7 @@ body{
         gap: 50px;
     }
     .img img ,canvas{
-        max-width: 80vw;
+        max-width: 100%;
     }
 }
 
